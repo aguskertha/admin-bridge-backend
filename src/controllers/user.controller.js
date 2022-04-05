@@ -180,6 +180,14 @@ const getUserByID = async (req, res, next) => {
     }
 }
 
+const resetPassword = async (req, res, next) => {
+    try {
+        
+    } catch (error) {
+        res.status(400).json({message: [error.toString()]});
+    }
+}
+
 module.exports = {
     register,
     login,
